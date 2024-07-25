@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+struct Student 
+{
+    char firstname[50];
+    char lastname[50];
+    char email[100];
+    char regNo[20];
+    char dob[20];
+    int age;
+};
+
+int main() 
+{
+    struct Student student1;
+    
+    strcpy(student1.firstname, "Ezra");
+    strcpy(student1.lastname, "Ondieki");
+    strcpy(student1.email, "ondiekiezra@zetech.ac.ke");
+    strcpy(student1.regNo, "BSE-01-0070/202");
+    strcpy(student1.dob, "14/07/2004");
+    student1.age = 20;
+
+    printf("Student Name: %s %s\n", student1.firstname, student1.lastname);
+    printf("Email: %s\n", student1.email);
+    printf("Registration Number: %s\n", student1.regNo);
+    printf("Date of Birth: %s\n", student1.dob);
+    printf("Age: %d\n", student1.age);
+    
+    return 0;
+}
