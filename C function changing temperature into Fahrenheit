@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+float convertCelsiusToFahrenheit(float celsius) {
+    float fahrenheit = (celsius * 1.8) + 32;
+    return fahrenheit;
+}
+
+int main() {
+    float celsius, fahrenheit;
+
+    printf("Enter temperature in degrees Celsius: ");
+    scanf("%f", &celsius);
+
+    fahrenheit = convertCelsiusToFahrenheit(celsius);
+
+    printf("%.2f degrees Celsius is equal to %.2f degrees Fahrenheit.\n", celsius, fahrenheit);
+
+    return 0;
+}
